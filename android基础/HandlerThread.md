@@ -1,4 +1,4 @@
-1. ThreadThread本身是一个Thread，由Thread创建消息循环而来
+##1. ThreadThread本身是一个Thread，由Thread创建消息循环而来
 ```
      Looper.prepare();
         synchronized (this) {
@@ -10,7 +10,7 @@
         Looper.loop();
 ```
 
-2. 使用ThreadHandler消息循环可以使用
+##2. 使用ThreadHandler消息循环可以使用
 
 
 ```
@@ -19,8 +19,8 @@ Handler handler=new Handler(HandlerThread.getLooper(),Handler.Callback);
 Handler handler=new Handler(HandlerThread.getLooper());
 将looper传递给handler
 ```
-3、操作
-操作 |意义
+##3、操作
+操作|意义
 --|--
 start() |开启消息线程
 quit()|退出消息线程
