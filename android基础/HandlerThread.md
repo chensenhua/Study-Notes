@@ -20,7 +20,7 @@ Handler handler=new Handler(HandlerThread.getLooper());
 将looper传递给handler
 ```
 ##3、操作
-操作|意义
+操作|意义|
 --|--|
 start() |开启消息线程|
 quit()|退出消息线程|
